@@ -1,0 +1,15 @@
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.3'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+bootRun {
+    if (javaOpts != '') {
+        jvmArgs = javaOpts.split("\\s+") as List
+    }
+}

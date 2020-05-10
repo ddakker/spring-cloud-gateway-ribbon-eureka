@@ -1,0 +1,12 @@
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootRun {
+    if (javaOpts != '') {
+        jvmArgs = javaOpts.split("\\s+") as List
+    }
+}
