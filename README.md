@@ -12,7 +12,7 @@
     
  ## 예제 실행
  ```
-./gradlew build.gradle 
+./gradlew build
 
 ## Backend App start
 java -jar -Dserver.port=9090 app-backend/build/libs/app-backend-0.0.1-SNAPSHOT.jar
