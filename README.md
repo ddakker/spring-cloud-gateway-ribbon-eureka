@@ -30,6 +30,7 @@ java -jar eureka-server/build/libs/eureka-server-0.0.1-SNAPSHOT.jar
 ## Gateway start
 java -jar gateway/build/libs/gateway-0.0.1-SNAPSHOT.jar
 # 접속 http://localhost:8888/goods/detail
+# 접속(rewrite) http://localhost:8888/goodsDetail
 
 
 ```
