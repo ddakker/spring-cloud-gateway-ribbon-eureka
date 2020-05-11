@@ -7,9 +7,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class RibbonServerApplication extends SpringBootServletInitializer {
+public class BackendApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RibbonServerApplication.class, args);
+		SpringApplication.run(BackendApplication.class, args);
 	}
 }

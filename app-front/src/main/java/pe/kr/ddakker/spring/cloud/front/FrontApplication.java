@@ -13,10 +13,10 @@ import org.springframework.cloud.netflix.ribbon.RibbonClients;
         @RibbonClient(name = "backend", configuration = RibbonConfiguration.class),
         @RibbonClient(name = "backendSecond", configuration = RibbonConfiguration.class)
 })
-public class RibbonClientApplication extends SpringBootServletInitializer {
+public class FrontApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonClientApplication.class, args);
+        SpringApplication.run(FrontApplication.class, args);
         System.out.println("");
     }
 }
