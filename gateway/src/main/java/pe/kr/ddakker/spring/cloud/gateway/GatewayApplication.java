@@ -26,6 +26,10 @@ public class GatewayApplication {
                 .route("get", p -> p
                         .path("/goods/detail")
                         .uri("http://localhost:8080"))
+                .route("get", p -> p
+                        .path("/goodsDetail")
+                        .filters(f -> f.rewritePath("/goodsDetail", "/goods/detail"))
+                        .uri("http://localhost:8080"))
                 .build();
     }
 
