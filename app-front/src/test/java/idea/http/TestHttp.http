@@ -1,0 +1,4 @@
+GET http://localhost:9090/api/test1
+Accept: application/json
+
+###
