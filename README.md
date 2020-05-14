@@ -27,10 +27,14 @@ java -jar eureka-server/build/libs/eureka-server-0.0.1-SNAPSHOT.jar
 # 접속: http://localhost:8761/
 # 인스턴스 등록 현황에 모두 등록되었는지 확인!!
 
-## Gateway start
+## Gateway start (gateway)
 java -jar gateway/build/libs/gateway-0.0.1-SNAPSHOT.jar
 # 접속 http://localhost:8888/goods/detail
 # 접속(rewrite) http://localhost:8888/goodsDetail
+
+## Netflix Zuul start (gateway)
+java -jar netflix-zuul/build/libs/netflix-zuul-0.0.1-SNAPSHOT.jar
+# 접속 http://localhost:8889/goods/detail
 
 
 ```
