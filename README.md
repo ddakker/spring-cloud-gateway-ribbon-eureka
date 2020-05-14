@@ -5,7 +5,7 @@
 * backend app
 
 ## 호출 흐름
-* gateway:8888/goods/detail
+* gateway:8888/goods/detail (or gateway:8889/goods/detail)
   * frontApp:8080/goods/detail
     * bacnendApp:9090,9091/goods
     * bacnendApp(Second):9093/options
