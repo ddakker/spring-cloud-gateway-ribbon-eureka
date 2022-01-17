@@ -1,8 +1,12 @@
 # spring cloud
+* admin (Spring Boot Admin 추가)
 * gateway
 * eureka server
 * front app
 * backend app
+
+## admin 서버
+* http://localhost:9999/
 
 ## 호출 흐름
 * gateway:8888/goods/detail (or gateway:8889/goods/detail)
@@ -36,5 +40,6 @@ java -jar gateway/build/libs/gateway-0.0.1-SNAPSHOT.jar
 java -jar netflix-zuul/build/libs/netflix-zuul-0.0.1-SNAPSHOT.jar
 # 접속 http://localhost:8889/goods/detail
 
-
+## Spring Boot Admin Server start
+java -jar admin/build/libs/admin-0.0.1-SNAPSHOT.jar
 ```

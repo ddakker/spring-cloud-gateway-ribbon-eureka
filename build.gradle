@@ -4,6 +4,7 @@ allprojects {
 
     ext {
         javaOpts = project.hasProperty('javaOpts') ? project.getProperty('javaOpts') : ''
+        adminServerVersion = '2.3.1'
     }
 }
 

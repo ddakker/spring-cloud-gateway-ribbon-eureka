@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation 'de.codecentric:spring-boot-admin-starter-server:' + adminServerVersion
+
+}
+
+bootRun {
+    if (javaOpts != '') {
+        jvmArgs = javaOpts.split("\\s+") as List
+    }
+}
